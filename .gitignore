@@ -4,3 +4,9 @@
 
 /.vs
 /main.c/.vs
+*.slnx
+*.user
+*.filters
+*.vcxproj
+/.gitignore
+/.gitignore
