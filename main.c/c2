@@ -1,0 +1,30 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+int main() {
+
+	
+	int score= 0;
+
+	scanf("%d", &score); 
+	if (score > 100 || score < 0) {
+		printf("请输入0~100的有效数字\n");
+	}
+
+	else {
+		if (score >= 85) {
+			printf("A\n");
+		}
+
+		else if (60 <= score && score < 85) {
+			printf("B\n");
+		}
+
+		else {
+			printf("C\n");
+		}
+	}
+	
+	return 0;
+	    
+}
