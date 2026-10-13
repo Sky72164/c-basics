@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main() {
+	int times = 0;
+	
+	scanf("%d", &times);
+
+	
+	
+	if (times < 0) {
+		printf("请输入大于0的有效数字\n");
+		return 0;
+	}
+
+	if (times <= 120) {
+		printf("%d\n", times * 90);
+
+	}
+	else {
+		int salary = (times - 120) * 180 + 10800;
+		printf("%d\n", salary);
+	}
+
+	return 0;
+}
