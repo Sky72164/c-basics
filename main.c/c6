@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+int main() {
+	double x = 0;
+	double y = 0;
+	scanf("%lf", &x);
+
+	if (x < 0) {
+		printf("请输入大于零的有效数字\n");
+		return 0;
+	}
+	
+	if (x <= 50) {
+		 y = 0.53 * x ;
+		printf("%.2f\n", y);
+	}
+	else {
+		double c = x - 50;
+		 y = 0.58*c+26.5;
+	printf("%.2f\n", y);
+	}
+	return 0;
+}
