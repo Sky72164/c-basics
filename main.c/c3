@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+int main() {
+
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	
+
+	scanf("%d %d %d", &a, &b, &c);
+	int y = b * b - 4 * a * c;
+	
+	if ( y> 0)
+	{ printf("有两个实数根\n"); }
+
+	else if (y == 0)
+	{ printf("有一个实数根\n"); }
+
+	else{ printf("没有实数根\n"); }
+
+	return 0;
+}
