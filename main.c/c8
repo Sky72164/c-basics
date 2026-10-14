@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+int main() {
+	double kg = 0;
+	double m = 0;
+	
+	scanf("%lf %lf", &kg, &m);
+	
+
+		double y = kg / (m*m);
+	
+		if (y>25) {
+			printf("fat\n");
+		}
+		else if (y<19) {
+			printf("thin\n");
+		}
+		else { printf("good\n"); 
+		}
+	
+	
+	return 0;
+}
